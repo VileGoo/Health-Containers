@@ -10,7 +10,7 @@
 
 **Installation:**
 
-*Download the .zip and extract the contents into the 'mods' folder of your Noita game files*
+*Download the .zip from the link above and extract the contents into the 'mods' folder of your Noita game files*
 
 **Config:**
 * **HealAmount = 10** -- How much the player is healed.
