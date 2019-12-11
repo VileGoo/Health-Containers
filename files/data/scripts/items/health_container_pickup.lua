@@ -10,11 +10,13 @@ function item_pickup( entity_item, entity_who_picked, item_name )
 	if( damagemodels ~= nil ) then
 		for i,v in ipairs(damagemodels) do
 			currenthp = tonumber( ComponentGetValue( v, "hp" ) )
-			max_hp = tonumber( ComponentGetValue( v, "max_hp") )
+			current_max_hp = tonumber( ComponentGetValue( v, "max_hp") )
 			
 			local targethp = currenthp + (HealAmount * 0.04) -- Health values are scaled up by 25 in the UI apparently. So using this multiplier will allow the correct hp to be set
+			local target_max_hp = current_max_hp + (MaxHealthIncrease * 0.04)
 			
-			if( targethp > max_hp ) then targethp = max_hp end
+			ComponentSetValue( v, "max_hp", target_max_hp)
+			if( targethp > target_max_hp ) then targethp = target_max_hp end
 			ComponentSetValue( v, "hp", targethp)
 			break
 		end
