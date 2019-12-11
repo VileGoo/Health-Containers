@@ -24,4 +24,10 @@
 
 ---
 
-Please push changes to the dev branch
+**User commits:**
+
+1) Fork this repository and clone it to your computer.
+
+2) Modify the contents of your cloned project.
+
+3) Push changes to your forked repository and make a pull request to the **dev** branch of the upstream repository.
