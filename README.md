@@ -28,6 +28,6 @@
 
 1) Fork this repository and clone it to your computer.
 
-2) Modify the contents of your cloned project and push those changes to your foked repository
+2) Modify the contents of your cloned project and push those changes to your forked repository
 
-3) Create a pull request to merge your master branch with the **dev** branch of the upstream repository
+3) Create a pull request to merge your forked repository with the **dev** branch of the upstream repository
