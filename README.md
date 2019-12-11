@@ -21,3 +21,7 @@
 *Config settings can be found in 'config.lua' in the 'health_container' mod folder*
 
 *If no health containers are dropping, try moving the mod up in your mods list*
+
+---
+
+Please push changes to the dev branch
