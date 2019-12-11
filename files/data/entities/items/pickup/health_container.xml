@@ -1,0 +1,58 @@
+<Entity name="unknown" tags="item_physics" >
+
+  <!-- physical presence -->
+	<UIInfoComponent
+		name="$item_healthcontainer">
+	</UIInfoComponent>
+
+  <PhysicsBodyComponent 
+    _tags="enabled_in_world"
+    uid="1" 
+    allow_sleep="1" 
+    angular_damping="0" 
+    fixed_rotation="0" 
+    is_bullet="0" 
+    linear_damping="0"
+    auto_clean="0"
+    hax_fix_going_through_ground="1"
+    on_death_leave_physics_body="1" >
+  </PhysicsBodyComponent>
+  
+  <PhysicsImageShapeComponent 
+    body_id="1"
+    centered="1"
+    image_file="mods/health_container/files/health_container.png"
+    material="wood_prop" >
+  </PhysicsImageShapeComponent>
+  
+  <!-- item -->
+
+  <ItemComponent
+    _tags="enabled_in_world"
+    auto_pickup="1"
+    item_name="Health container"
+    max_child_items="0"
+    is_pickable="1"
+    ui_sprite="data/ui_gfx/items/book.png"
+    ui_description="Lorem ipsum"
+    play_pick_sound="0"
+    preferred_inventory="FULL" >
+  </ItemComponent>
+
+  <HitboxComponent 
+    _tags="enabled_in_world"
+    aabb_min_x="-3" 
+    aabb_max_x="3" 
+    aabb_min_y="-5" 
+    aabb_max_y="0" >
+  </HitboxComponent>
+
+  <LifetimeComponent
+    lifetime="900" >
+  </LifetimeComponent>
+  
+	<LuaComponent 
+		script_item_picked_up="mods/health_container/files/data/scripts/items/health_container_pickup.lua" >
+	</LuaComponent>
+
+</Entity>

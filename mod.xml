@@ -1,0 +1,6 @@
+<Mod
+	name="Health Container"
+	description="Enemies have a chance of dropping a health container on death.\nPicking up a health container will heal you for a small amount."
+	request_no_api_restrictions="0" 
+>
+</Mod>
