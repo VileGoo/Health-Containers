@@ -25,6 +25,8 @@ GitHub: *Click 'Clone or download' then click 'Download ZIP'. Extract the conten
 
 *If no health containers are dropping, try moving the mod up in your mods list*
 
+*Make sure this mods folder is titled 'health_container' in your mods directory*
+
 ---
 
 **User commits:**
