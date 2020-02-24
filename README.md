@@ -12,7 +12,7 @@
 
 Modworkshop: *Download the .zip from the link above and extract the contents into the 'mods' folder of your Noita game files*
 
-GitHub: *Click 'Clone or download' then click 'Download ZIP'. Extract the contents to your 'mods' folder of your Noita game files and rename the folder from 'Health-Containers-master' to 'health_containers'.*
+GitHub: *Click 'Clone or download' then click 'Download ZIP'. Extract the contents to your 'mods' folder of your Noita game files and rename the folder from 'Health-Containers-master' to 'health_container'.*
 
 **Config:**
 * **MaxHealthIncrease = 0** -- How much the player's max health will be increased by.
