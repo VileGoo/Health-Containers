@@ -1,9 +1,9 @@
-<Entity name="unknown" tags="item_physics" >
+<Entity name="health_container_entity" tags="item_physics" >
 
   <!-- physical presence -->
-	<UIInfoComponent
+	<!-- <UIInfoComponent
 		name="$item_healthcontainer">
-	</UIInfoComponent>
+	</UIInfoComponent> -->
 
   <PhysicsBodyComponent 
     _tags="enabled_in_world"
