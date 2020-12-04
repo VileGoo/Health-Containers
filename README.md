@@ -10,9 +10,9 @@
 
 **Big Update**
 
-Added % Based Healing
+* Added % Based Healing
 
-Added in-game config menu
+* Added in-game config menu
 
 Thanks to shadowimmage on GitHub for the contributions
 
