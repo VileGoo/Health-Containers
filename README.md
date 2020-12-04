@@ -7,7 +7,9 @@
 #### Health Containers is a simple, quality of life mod for the game Noita that gives slain enemies a chance of dropping a health container. Health containers will restore a small amount of HP when picked up.
 
 **Big Update**
+
 Added % Based Healing
+
 Added in-game config menu
 
 Thanks to shadowimmage on GitHub for the contributions
