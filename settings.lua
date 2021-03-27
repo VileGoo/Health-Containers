@@ -8,20 +8,20 @@ mod_settings =
   {
     category_id = "health_container_settings",
     ui_name = "Health Container Settings",
-    ui_description = "Settings for the health container drops",
+    ui_description = "Settings for the health container drops.",
     settings = 
     {
       {
         id = "drop_chance",
         ui_name = "Drop Chance",
-        ui_description = "Chance that a health container drops upon killing an enemy",
-        value_default = 0.5,
+        ui_description = "Chance that a health container drops upon killing an enemy.",
+        value_default = 0.1,
         value_min = 0,
         value_max = 1,
         value_display_multiplier = 100,
         value_display_formatting = " $0 %",
         scope = MOD_SETTING_SCOPE_RUNTIME,
-      },
+      },	  
       {
         id = "max_health_increase",
         ui_name = "Max Health Increase",
@@ -36,15 +36,15 @@ mod_settings =
       {
         id = "heal_mode",
         ui_name = "Health Container Healing Mode",
-        ui_description = "Set whether health containers heal a fixed amount or a percent of max health",
-        value_default = "percent",
+        ui_description = "Set whether health containers heal a fixed amount or a percent of max health.",
+        value_default = "fixed",
         values = { {"percent", "Percent"}, {"fixed", "Fixed"} },
         scope = MOD_SETTING_SCOPE_RUNTIME,
       },
       {
         id = "heal_amount",
         ui_name = "Healing Amount (Fixed)",
-        ui_description = "Fixed amount of HP to heal each pickup",
+        ui_description = "Fixed amount of HP to heal each pickup.",
         value_default = 0.4,
         value_min = 0,
         value_max = 4,
@@ -55,7 +55,7 @@ mod_settings =
       {
         id = "heal_percent",
         ui_name = "Healing Amount (Percentage)",
-        ui_description = "Percentage of Max HP to heal on each pickup",
+        ui_description = "Percentage of Max HP to heal on each pickup.",
         value_default = 0.10,
         value_min = 0,
         value_max = 1,

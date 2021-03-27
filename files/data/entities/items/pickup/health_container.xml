@@ -1,58 +1,95 @@
 <Entity name="health_container_entity" tags="item_physics" >
 
-  <!-- physical presence -->
+	<!-- physical presence -->
 	<!-- <UIInfoComponent
-		name="$item_healthcontainer">
+	name="$item_healthcontainer">
 	</UIInfoComponent> -->
 
-  <PhysicsBodyComponent 
-    _tags="enabled_in_world"
-    uid="1" 
-    allow_sleep="1" 
-    angular_damping="0" 
-    fixed_rotation="0" 
-    is_bullet="0" 
-    linear_damping="0"
-    auto_clean="0"
-    hax_fix_going_through_ground="1"
-    on_death_leave_physics_body="1" >
-  </PhysicsBodyComponent>
-  
-  <PhysicsImageShapeComponent 
-    body_id="1"
-    centered="1"
-    image_file="mods/health_container/files/health_container.png"
-    material="wood_prop" >
-  </PhysicsImageShapeComponent>
-  
-  <!-- item -->
+	<PhysicsBodyComponent 
+		_tags="enabled_in_world"
+		uid="1" 
+		allow_sleep="1" 
+		angular_damping="2" 
+		fixed_rotation="0" 
+		is_bullet="0" 
+		linear_damping="4"
+		auto_clean="0"
+		hax_fix_going_through_ground="1"
+		on_death_leave_physics_body="1" >
+	</PhysicsBodyComponent>
 
-  <ItemComponent
-    _tags="enabled_in_world"
-    auto_pickup="1"
-    item_name="Health container"
-    max_child_items="0"
-    is_pickable="1"
-    ui_sprite="data/ui_gfx/items/book.png"
-    ui_description="Lorem ipsum"
-    play_pick_sound="0"
-    preferred_inventory="FULL" >
-  </ItemComponent>
+	<PhysicsImageShapeComponent 
+		body_id="1"
+		centered="1"
+		image_file="mods/health_container/files/health_container.png"
+		material="ice_glass_b2" >
+	</PhysicsImageShapeComponent>
 
-  <HitboxComponent 
-    _tags="enabled_in_world"
-    aabb_min_x="-3" 
-    aabb_max_x="3" 
-    aabb_min_y="-5" 
-    aabb_max_y="0" >
-  </HitboxComponent>
+	<!-- item -->
 
-  <LifetimeComponent
-    lifetime="900" >
-  </LifetimeComponent>
-  
+	<ItemComponent
+		_tags="enabled_in_world"
+		auto_pickup="1"
+		item_name="Health container"
+		max_child_items="0"
+		is_pickable="1"
+		ui_sprite="data/ui_gfx/items/book.png"
+		ui_description="Lorem ipsum"
+		play_pick_sound="0"
+		preferred_inventory="FULL" >
+	</ItemComponent>
+
+	<HitboxComponent 
+		_tags="enabled_in_world"
+		aabb_min_x="-3" 
+		aabb_max_x="3" 
+		aabb_min_y="-5" 
+		aabb_max_y="0" >
+	</HitboxComponent>
+
+	<LifetimeComponent
+		lifetime="900" >
+	</LifetimeComponent>
+
 	<LuaComponent 
 		script_item_picked_up="mods/health_container/files/data/scripts/items/health_container_pickup.lua" >
 	</LuaComponent>
+	
+	<!-- particle glitter -->
+	<SpriteParticleEmitterComponent
+		sprite_file="data/particles/heal_small.xml"
+		lifetime="0.1"
+		randomize_lifetime.min="0.1"
+		randomize_lifetime.max="0.3"
+		emission_interval_min_frames="10"
+		emission_interval_max_frames="35"
+		count_min="1"
+		count_max="1"
+		additive="1"
+		emissive="1"
+		scale.x="1.0"
+		scale.y="1.0"
+		sprite_random_rotation="1"
+		randomize_scale.min_x="-0.1" 
+		randomize_scale.max_x="0.1" 
+		randomize_scale.min_y="-0.1" 
+		randomize_scale.max_y="0.1" 
+		randomize_position.min_y="-3" 
+		randomize_position.max_y="3"
+		randomize_position.min_x="-3"  
+		randomize_position.max_x="3"
+		velocity_slowdown="2"
+		randomize_animation_speed_coeff.min="0.8"  
+		randomize_animation_speed_coeff.max="1.0" 
+		>
+	</SpriteParticleEmitterComponent>	
+	
+	
+	
+	
+	
+	
+	
+	
 
 </Entity>

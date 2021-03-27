@@ -8,7 +8,19 @@
 
 ---
 
-**Big Update**
+**Visual Update (2021 03 27)**
+
+* Improved visual clarity
+
+* Added VFX
+
+* Added subtle anti-gravity
+
+* Changed physics material to glass
+
+---
+
+**Big Update (2020-12-03)**
 
 * Added % Based Healing
 

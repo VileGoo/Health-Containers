@@ -7,15 +7,15 @@
 		item_count_max="3"
 		level="1" >
 	</ItemChestComponent>
-
+	
 	<LuaComponent
-	    execute_every_n_frame="99999999"
+	    execute_every_n_frame="-1"
 		script_death="mods/health_container/files/data/scripts/items/drop_health_container.lua"
 	    remove_after_executed="1" >
 	</LuaComponent>
-	
+
 	<LuaComponent
-	    execute_every_n_frame="99999999"
+	    execute_every_n_frame="-1"
 	    script_death="data/scripts/items/drop_money.lua"
 	    remove_after_executed="1" >
 	</LuaComponent>
@@ -223,13 +223,13 @@
 	</CameraBoundComponent>
 
 	<AudioComponent
-		file="data/audio/Desktop/animals.snd"
+		file="data/audio/Desktop/animals.bank"
 		event_root="animals"
 		set_latest_event_position="1" >
 	</AudioComponent>
 	
 	<AudioComponent
-		file="data/audio/Desktop/animals.snd"
+		file="data/audio/Desktop/animals.bank"
 		event_root="animals/generic"
 		set_latest_event_position="1" >
 	</AudioComponent>
